@@ -1,0 +1,172 @@
+@chasert "utf-8";
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: linear-gradient(to bottom, #3C4767 70%, #CC3300 100%);
+    position: relative;
+
+}
+.square{
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+.middle{
+    text-align: center;
+}
+.title{
+    font-size: 17px;
+    margin-bottom:30px;
+}
+.button{
+    background: #336699;
+    color: white;
+    margin: 0 65%;
+    border-radius: 5px;
+}
+.btn-added{
+    margin: 3% 20%;
+    font-size:13px;
+    width: 30px;
+    height: 25%;
+    padding:3px 15px;
+}
+
+.box{
+    justify-content:space-between;
+    z-index: 2;
+    background: linear-gradient(rgba(0,34,57,0.4)70%,rgba(57,26,26,0.4)100%);
+    position: absolute;
+}
+.box-login{
+    top: 30%;
+    right: 0;
+    bottom: 70%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    padding: 7% 0;
+}
+.box-register{
+    top: 25%;
+    right: 0;
+    bottom: 5%;
+    left: 40%;
+    width: 20%;
+    height: 35%;
+    padding: 7% 0;
+}
+.box-added{
+    top: 30%;
+    right: 0;
+    bottom: 5%;
+    left: 37%;
+    width: 25%;
+    height: 2%;
+    padding: 7% 0;
+}
+.box-min1{
+    top: 0;
+    right: 0;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    padding: 7% 0;
+    position: absolute;
+}
+.box-min2{
+    top: 0;
+    right: 0;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    padding: 7% 0;
+    position: absolute;
+}
+.box-min3{
+    top: 0;
+    right: 0;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    height: 25%;
+    padding: 7% 0;
+    position: absolute;
+}
+.small-box{
+    justify-content:space-between;
+    width: 70%;
+    margin: 0 15%;
+    z-index: 3;
+    border-radius: 5px;
+}
+.login-input{
+    margin-bottom:20px;
+}
+.white{
+    color: white;
+}
+/* 矢印メニュー */
+.arrow{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  content: '';/*ここは空白のままでいいです*/
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  border-top: 2px solid #000;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu {
+  position: absolute;
+  right: 5px;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+}
+/* プルダウンメニュー中 */
+.nav-wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.gnavi{
+  background-color: #7d7d7d;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 0 30px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.gnavi{
+  position: fixed; /*表示位置を固定*/
+  z-index: 2; /*重ね順を変更*/
+  top: 0; /*表示位置を指定*/
+  left: 0; /*表示位置を指定*/
+  background: #fff;/*背景を白にする*/
+  color: #000; /*文字色を黒にする*/
+  text-align: center; /*テキストを中央揃え*/
+  width: 60%; /*全幅表示*/
+  height: 100%;
+  transform: translateY(-100%); /*ナビを上に隠す*/
+  transition: all 0.6s; /*アニメーションの時間を指定*/
+}
+
+.gnavi{
+  display: none;
+}
+/* ヘッダーアイコンとユーザー名 */
+.user{
+display: inline-block;
+}
